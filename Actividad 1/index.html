@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href='style.css'>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-container">
+            <h1>Toole</h1>
+            <span>Web Personal</span>
+        </div>
+    </div>
+
+    <div id="sidemenu" class="menu-collapsed">
+
+        <div id="header">
+            <div id="title">Mirko Torres M.</div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+        <ul id="menu-items">
+            <li class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="./icons/home.png" alt="home"></div>
+                    <div class="title">Home</div>
+                </a>
+            </li>
+            <li class="item separator">
+                <a href="experiencia.html">
+                    <div class="icon"><img src="./icons/portfolio.png" alt="experience"></div>
+                    <div class="title">Experiencia</div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="contact.html">
+                    <div class="icon"><img src="./icons/contact-mail.png" alt="contact"></div>
+                    <div class="title">Contactame</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="contenido">
+        <div id="article-container">
+            <img src="\icons\617108_450891291629787_609242543_o.jpg" alt="">
+            <h1>Mirko Torres M.</h1>
+            <p>Analista Programador</p>
+            <p><a href="http://facebook.com/mirko.torresmartinez">Buscame</a>
+            <p>Hola! Mi nombre Mirko Andres Torres Martinez, tengo 29 años, estudiante de Ingenieria en Informatica en el Instituto INACAP y trabajo como asistente de RRHH en la empresa "Nucleo Empresas", y cuento con un certificacion en Excel avanzado por INACAP, vivo en la comuna de Providencia de la ciudad de Santiago, Chile. </p>
+            <p>Me caracterizo por ser una persona muy alegre, responsable, estudiosa, mi pasatiempo es escuchar musica, leer, ver comics, series de superheroe y anime tambien me gusta y lo mas importante disfrutar a mi familia (mi esposa Javiera y mis niños), los cuales son mi gran pilar para desarrollarme, aprender y ser una mejor persona cada dia.</p>
+
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('menu-expanded');
+            menu.classList.toggle('menu-collapsed');
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        });
+    </script>
+</body>

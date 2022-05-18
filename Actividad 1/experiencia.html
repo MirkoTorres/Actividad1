@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href='style.css'>
+    <script src="https://your-site-or-cdn.com/fontawesome/v6.1.1/js/all.js" data-auto-a11y="true"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-container">
+            <h1>Toole</h1>
+            <span>Web Personal</span>
+        </div>
+    </div>
+
+    <div id="sidemenu" class="menu-collapsed">
+
+        <div id="header">
+            <div id="title">Mirko Torres M.</div>
+            <div id="menu-btn">
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+                <div class="btn-hamburguer"></div>
+            </div>
+        </div>
+        <ul id="menu-items">
+            <li class="item">
+                <a href="index.html">
+                    <div class="icon"><img src="./icons/home.png" alt="home"></div>
+                    <div class="title">Home</div>
+                </a>
+            </li>
+            <li class="item separator">
+                <a href="experiencia.html">
+                    <div class="icon"><img src="./icons/portfolio.png" alt="experience"></div>
+                    <div class="title">Experiencia</div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="contact.html">
+                    <div class="icon"><img src="./icons/contact-mail.png" alt="contact"></div>
+                    <div class="title">Contactame</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contenido-card">
+
+        <div class="timeline">
+            <h3>Experiencia</h3>
+            <label>Tengo una larga trayectoria en el ambito laboral.</label>
+            <div class="box">
+                <div class="container">
+                    <div class="lines">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <h4>2009</h4>
+                            <p>Encuestador, en la empresa Millword Brown</p>
+                        </div>
+                        <div class="card">
+                            <h4>2010</h4>
+                            <p>Jefe Garzon, Restaurant SushiHana</p>
+                        </div>
+                        <div class="card">
+                            <h4>2015</h4>
+                            <p>Administrador, Restaurante Niu Sushi</p>
+                        </div>
+                        <div class="card">
+                                <h4>2021</h4>
+                                <p>Asistente RRHH, Akro Diseños</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('menu-expanded');
+            menu.classList.toggle('menu-collapsed');
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        });
+    </script>
+</body>
